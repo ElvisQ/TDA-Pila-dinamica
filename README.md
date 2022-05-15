@@ -19,12 +19,19 @@ El archivo pruebas_pila.c, contine las pruebas unitarias para verificar que la p
 Las pruebas verifican que:
 
 °Se pueda crear y destruir correctamente la estructura.
+
 °Se puedan apilar elementos, que al desapilarlos se mantenga el invariante de pila.
+
 °Prueba de volumen: Se pueden apilar muchos elementos (1000, 10000 elementos, o el volumen que corresponda): hacer crecer la pila hasta un valor sabido mucho mayor que el tamaño inicial, y desapilar elementos hasta que esté vacía, comprobando que siempre cumpla el invariante. Recordar no apilar siempre el mismo puntero, validar que se cumpla siempre que el tope de la pila sea el correcto paso a paso, y que el nuevo tope después de cada desapilar también sea el correcto.
+
 °El apilamiento del elemento NULL es válido.
+
 °Condición de borde: comprobar que al desapilar hasta que está vacía hace que la pila se comporte como recién creada.
+
 °Condición de borde: las acciones de desapilar y ver_tope en una pila recién creada son inválidas.
+
 °Condición de borde: la acción de esta_vacía en una pila recién creada es verdadero.
+
 °Condición de borde: las acciones de desapilar y ver_tope en una pila a la que se le apiló y desapiló hasta estar vacía son inválidas.
 
 
